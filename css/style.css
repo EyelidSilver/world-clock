@@ -1,12 +1,13 @@
 body {
-  background-color: #eeeeee;
+  background-color: #eef1ff;
   font-family: sans-serif;
+  color: #333;
 }
 
 h1 {
   text-align: center;
   margin-top: 0;
-  font-size: 36px;
+  font-size: 50px;
 }
 
 h2 {
@@ -29,12 +30,12 @@ footer {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 500px;
   margin: 60px auto;
   background-color: #fff;
   padding: 40px;
   border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(50, 96, 196, 0.2) 0px 7px 29px 0px;
 }
 
 .city {

@@ -21,17 +21,17 @@ losAngelesTimeElement.innerHTML = losAngelesTime.format(
   }
 
   //Tokyo
-  let tokyoElement = document.querySelector("#tokyo");
+  let amsterdamElement = document.querySelector("#amsterdam");
 
-  if (tokyoElement) {
-    let tokyoDateElement = tokyoElement.querySelector(".date");
-    let tokyoTimeElement = tokyoElement.querySelector(".time");
-    let tokyoTime = moment().tz("Asia/Tokyo");
+  if (amsterdamElement) {
+    let amsterdamDateElement = amsterdamElement.querySelector(".date");
+    let amsterdamTimeElement = amsterdamElement.querySelector(".time");
+    let amsterdamTime = moment().tz("Europe/Amsterdam");
 
-    tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
-    tokyoTimeElement.innerHTML = `${tokyoTime.format(
+    amsterdamDateElement.innerHTML = amsterdamTime.format("MMMM Do YYYY");
+    amsterdamTimeElement.innerHTML = `${amsterdamTime.format(
       "h:mm:ss"
-    )} <small>${tokyoTime.format("A")}</small>`;
+    )} <small>${amsterdamTime.format("A")}</small>`;
   }
 }
 
