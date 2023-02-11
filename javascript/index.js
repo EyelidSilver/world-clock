@@ -1,15 +1,15 @@
 function updateTime() {
-  let losAngelesElement = document.querySelector("#los-angeles");
-  if (losAngelesElement) {
-    //Los Angeles
-    let losAngelesDateElement = losAngelesElement.querySelector(".date");
-    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
+  let yakutskElement = document.querySelector("#yakutsk");
+  if (yakutskElement) {
+    //Yakutsk
+    let yakutskDateElement = yakutskElement.querySelector(".date");
+    let yakutskTimeElement = yakutskElement.querySelector(".time");
+    let yakutskTime = moment().tz("Asia/Yakutsk");
 
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
-    losAngelesTimeElement.innerHTML = `${losAngelesTime.format(
+    yakutskDateElement.innerHTML = yakutskTime.format("MMMM Do YYYY");
+    yakutskTimeElement.innerHTML = `${yakutskTime.format(
       "h:mm:ss"
-    )} <small>${losAngelesTime.format("A")}</small>`;
+    )} <small>${yakutskTime.format("A")}</small>`;
 
     /**
 
@@ -51,7 +51,7 @@ function updateCity(event) {
           </div>
           <div class="time">${cityTime.format(
             "h:mm:ss"
-          )}<small>${cityTime.format("A")}</small></div>
+          )} <small>${cityTime.format("A")}</small></div>
         </div>
         <a href="/">All cities</a>
   `;
